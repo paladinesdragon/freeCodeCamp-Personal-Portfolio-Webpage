@@ -8,80 +8,71 @@
     <title>freeCodeCamp Personal Porfolio Project</title>
 </head>
 <body>
-    <nav id="navbar">
-        <a href="#welcome-section">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <nav id="navbar" class="flex">
+        <p><a href="#">WELCOME</a></p>
+        <p><a href="#projects">PROJECTS</a></p>
     </nav>
     
     <main>
         <section id="welcome-section">
-            <header class="welcome-header">
-                <h1>I'm Matthew Higgins</h1>
-                <h2>a self taught web developer</h2>
-            </header>
-            
-        </section>
-        <section id="skills">
-            <h2>The things I know</h2>
-                <section class="skills-grid">
-                    <section id="code-skills" class="skills">
-                    <h3>Coding Experience</h3><hr>  
-                        <p><i class="fab fa-html5 fa-3x"></i>HTML5</p>
-                        <p><i class="fab fa-css3-alt fa-3x"></i>CSS3</p>
-                        <p><i class="fab fa-js-square fa-3x"></i>JavaScript</p>
-                        <p><i class="fab fa-git-square fa-3x"></i>Git</p>
-                    </section>
-                    <section id="software-skills" class="skills">
-                        <h3>Software Knowledge</h3><hr>
-                            <p><a href="https://www.figma.com/" target="_blank"><img src="img/figma.png" alt="figma logo"></a></p>
-                            <p><a href="https://www.gimp.org/" target="_blank"><img src="img/gimp.png" alt="gimp logo"></a></p>
-                            <p><a href="https://www.blender.org/" target="_blank"><img src="img/blender_logo.svg" alt="blender logo"></a></p>
-                    </section>
-                    <section id="other-skills" class="skills">
-                    <h3>Other Skills</h3><hr>
-                        <p>Image & Video Editing</p>
-                        <p>Project Management (Agile and Scrum)</p>
-                        <p>Conducting Project Consultations</p>
-                        <p>Writing Creative Briefs</p>
-                        <p>Scoping Work</p>
-                    </section>
+            <section class="welcome-overlay">
+                <header class="welcome-text">
+                    <h1>I'm <span>Matthew Higgins</span></h1>
+                    <h2>SELF TAUGHT WEB DEVELOPER</h2>
+                </header>
+                <!-- <section class="flex">  
+                    <p><i class="fab fa-html5 fa-3x"></i></p>
+                    <p><i class="fab fa-css3-alt fa-3x"></i></p>
+                    <p><i class="fab fa-js-square fa-3x"></i></p>
+                    <p><i class="fab fa-git-square fa-3x"></i></p>
+                </section> -->
+                <section class="flex">
+                    <p><a id="profile-link" href="https://github.com/paladinesdragon" target="_blank"><i class="fab fa-github fa-2x"></i></a></p>
+                    <p><a href="https://www.linkedin.com/in/matthew-higgins-68871b158/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></p>
                 </section>
+            </section>  
         </section>
-        <section id="projects">
-            <h2>Some of my work</h2>
-                <section class="projects-grid">
-                    <a class="project-tile" href="https://codepen.io/blackRabbit3dx/full/gObOvBz" target="_blank">
-                        <img src="img/product_landing.jpg" alt="project image">
-                        <p>Product Landing Page</p>
-                    </a>
-                    <a class="project-tile" href="https://codepen.io/blackRabbit3dx/full/wvMgomO" target="_blank">
-                        <img src="img/tech_doc.jpg" alt="project image">
-                        <p>Technical Document</p>
-                    </a>
-                    <a class="project-tile" href="https://joshuahigginslawncare.com/" target="_blank">
-                        <img src="img/jhlc.jpg" alt="project image">
-                        <p>Joshua Higgins Lawn Care</p>
-                    </a>
-                </section>
-        </section>
-        <section id="contact">
-            <header class="contact-header">
-                <h2>Contact me...</h2>
-                <h3>and let's discuss transforming your passion into a network that engages others!</h3>
+
+        <section id="projects" class="section-container">
+            <header class="section-header">
+                <h2>PROJECTS</h2>
             </header>
-            <section class="contact-links">
-                <p><a href="mailto:mattmhiggins4@gmail.com"><i class="fas fa-envelope fa-2x"></i>mattmhiggins4@gmail.com</a></p>
-                <p><a href="https://www.freecodecamp.org/paladinesdragon" id="profile-link" target="_blank">My freeCodeCamp Porfolio</a></p>
-                <p><a href="https://github.com/paladinesdragon" target="_blank"><i class="fab fa-github fa-2x"></i>My GitHub</a></p>
-                <p><a href="https://www.linkedin.com/in/matthew-higgins-68871b158/" target="_blank"><i class="fab fa-linkedin fa-2x"></i>LinkedIn</a></p>
+            <section class="grid-auto container">
+                <article class="project">
+                    <a href="https://joshuahigginslawncare.com/" target="_blank">
+                        <img src="img/jhlc.jpg" alt="project image" class="project-img" />
+                        <p class="project-title">Lawn Care Business</p>
+                    </a>
+                </article>
+                <article class="project">
+                    <a href="https://freecodecamp-technical-documentation-project.netlify.app/" target="_blank">
+                        <img src="img/tech_doc.jpg" alt="project image" class="project-img" />
+                        <p class="project-title">Technical Documentation</p>
+                    </a>
+                </article>
+                <article class="project">
+                    <a href="https://freecodecamp-product-landing-page-project.netlify.app/" target="_blank">
+                        <img src="img/product_landing.jpg" alt="project image" class="project-img" />
+                        <p class="project-title">Product Landing Page</p>
+                    </a>
+                </article>
+                <article class="project">
+                    <a href="https://freecodecamp-survey-form-project.netlify.app/" target="_blank">
+                        <img src="img/survey_form.jpg" alt="project image" class="project-img" />
+                        <p class="project-title">Survey Form</p>
+                    </a>
+                </article>
             </section>
         </section>
     </main>
-        <footer>
-            <p>&copy;2020 Matthew Higgins</p>
+        <footer class="flex">
+            <section>
+                <p id="copyright">&copy;2021 Matthew Higgins</p>
+            </section>
+            <section class="flex">
+                <p><a id="profile-link" href="https://github.com/paladinesdragon" target="_blank"><i class="fab fa-github fa-lg"></i></a></p>
+                <p><a href="https://www.linkedin.com/in/matthew-higgins-68871b158/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></p>
+            </section>
         </footer>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
